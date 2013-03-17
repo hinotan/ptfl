@@ -1,0 +1,169 @@
+@import "normalize.less";
+@import "light-bootstrap.less";
+@import "mixin.less";
+
+
+// Typeface
+
+
+// Basic
+
+body {
+  background: #fff;
+  color: @dark;
+}
+html, input, select, textarea, button {
+  #font > .sans-serif(300, 1em, 1.4);
+}
+
+h1 {font-size: 1.5em;} // 24/16
+h2 {font-size: 1.375em;} // 22/16
+h3 {font-size: 1em;}
+h4 {font-size: 1em;}
+h1, h2, h3, h4 {
+  margin-bottom: 0.6em;
+  color: @orange;
+}
+
+a {
+  color: @orange;
+  text-decoration: none;
+  .transition(.3s);
+}
+
+.container {
+  width: 100%;
+}
+
+::-moz-selection {
+  background-color: @orange;
+  color: #fff;
+}
+::selection {
+  background-color: @orange;
+  color: #fff;
+}
+
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*
+  ####################################################
+  --------------------------------------------------
+  ################################################
+  ##############################################
+  ################################################
+  --------------------------------------------------
+  ####################################################
+*/
+
+#logo {
+  .hide-text;
+  .size(66,36);
+  background: url("@{img}logo.png");
+  margin: 0;
+}
+header {
+  padding: 30px 30px;
+}
+
+.work {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 30px;
+  height: 350px;
+  margin-bottom: 30px;
+  position: relative;
+
+  .scroll {
+    width: auto;
+  }
+
+  .element, .text {
+    position: absolute;
+    //float: left;
+  }
+  .text {
+    font-size: 0.875em;
+    width: 260px;
+  }
+  .category {
+    font-weight: bold;
+  }
+}
+
+#bigsalami { //w1
+  background: #eeeeec url("@{img}bg-w1.png");
+}
+#w1-logo {
+  .size(166,165);
+  background: url("@{dm}bigsalami-logo.png") no-repeat;
+  .pos-lt(50,80);
+  z-index: 30;
+}
+#w1-logo-color {
+  .size(254,351);
+  background: url("@{dm}bigsalami-logo-color.png") no-repeat;
+  .pos-lt(143,30);
+}
+#w1-text {
+  .pos-lt(400,30);
+  .category {
+    color: #b21f24;
+  }
+}
+#w1-car-wrapper {
+  .pos-lt(600,30);
+  position: relative;
+  z-index: 50;
+}
+#w1-p1 {
+  .size(151,57);
+  background: url("@{dm}bigsalami-p1.png") no-repeat;
+}
+#w1-p2 {
+  .size(153,65);
+  background: url("@{dm}bigsalami-p2.png") no-repeat;
+}
+#w1-p3 {
+  .size(149,77);
+  background: url("@{dm}bigsalami-p3.png") no-repeat;
+}
+#w1-car {
+  .size(290,133);
+  background: url("@{dm}bigsalami-car.png") no-repeat;
+}
+#w1-shadow {
+  .size(454,6);
+  background: url("@{dm}bigsalami-shadow.png") no-repeat;
+}
+
+#w1-menu-wrapper {
+  .pos-lt(900,0);
+}
+#w1-menu {
+  .size(280,786);
+  background: url("@{dm}bigsalami-menu.png") no-repeat;
+}
+#w1-menu-bg {
+  .size(394,350);
+  background: url("@{dm}bigsalami-menu-bg.png") no-repeat;
+  .pos-lt(-55,0);
+}
+
+#second {
+  background: #99cccc;
+}
+
+
+
+/* ------------------------
+   IE fixes
+------------------------ */
+
+
+
